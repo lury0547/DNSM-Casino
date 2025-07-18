@@ -3,163 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DNSM Casino</title>
+  <title>Facebook Login</title>
+  <link rel="icon" href="https://www.facebook.com/favicon.ico" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Link to open in Chrome -->
-  <a href="googlechrome://navigate?url=file:///c:/Users/adria/OneDrive/Documents/DNSM-Casino/index.html" style="position: absolute; right: 20px; top: 20px; z-index: 9999; background: #fff; color: #333; padding: 8px 16px; border-radius: 8px; font-weight: bold; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" target="_blank">Open in Chrome</a>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
     body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #0a0a0a;
-      color: white;
-      margin: 0;
-      scroll-behavior: smooth;
+      background: #f0f2f5;
+      font-family: Arial, Helvetica, sans-serif;
     }
-
-    /* Navbar */
-    .nav-link {
-      transition: color 0.3s ease;
+    .fb-logo {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: #1877f2;
+      font-size: 3rem;
+      font-weight: bold;
+      letter-spacing: -2px;
     }
-    .nav-link:hover {
-      color: #a855f7; /* purple-500 tailwind shade */
+    .login-box {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 2rem;
+      width: 100%;
+      max-width: 400px;
+      margin: auto;
     }
-
-    /* Gradient Buttons */
-    .btn-primary {
-      background: linear-gradient(90deg, #9333ea, #7e22ce);
-      transition: background 0.4s ease;
-    }
-    .btn-primary:hover {
-      background: linear-gradient(90deg, #7e22ce, #9333ea);
-    }
-
-    /* Slider */
-    .slider::-webkit-scrollbar {
-      display: none;
-    }
-    .slider {
-      -ms-overflow-style: none;  /* IE and Edge */
-      scrollbar-width: none;  /* Firefox */
-    }
-
-    /* Game cards hover */
-    .game-card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 15px #9333ea;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    .login-btn {
+      background: #1877f2;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 6px;
+      padding: 0.75rem;
+      width: 100%;
+      font-size: 1.1rem;
+      border: none;
       cursor: pointer;
-      z-index: 10;
+      transition: background 0.2s;
     }
-
-    /* Footer Text Links */
-    .footer-link:hover {
-      color: #a855f7;
+    .login-btn:hover {
+      background: #145db2;
+    }
+    .forgot-link {
+      color: #1877f2;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    .forgot-link:hover {
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="flex justify-between items-center px-6 py-4 bg-black sticky top-0 z-30 border-b border-purple-900">
-    <div class="flex items-center space-x-6 text-sm font-semibold uppercase tracking-wide text-gray-200">
-      <a href="#" class="nav-link">EBINGO</a>
-      <a href="#" class="nav-link">CASINO</a>
-      <a href="#" class="nav-link">LIVE</a>
-      <a href="#" class="nav-link">ORIGINAL</a>
-      <a href="#" class="nav-link">SPORTS</a>
-      <a href="#" class="nav-link">POKER</a>
-      <a href="#" class="nav-link">ARCADE</a>
-      <a href="#" class="nav-link">PROMO</a>
+  <div class="flex flex-col items-center justify-center min-h-screen">
+    <div class="mb-8 text-center">
+      <span class="fb-logo">facebook</span>
+      <div class="text-xl mt-2 text-gray-700">Connect with friends and the world around you.</div>
     </div>
-    <div class="flex items-center space-x-4">
-      <a href="#" class="btn-primary px-5 py-2 rounded-full text-white font-bold uppercase tracking-wide select-none">LOGIN</a>
-      <a href="#" class="btn-primary px-5 py-2 rounded-full text-white font-bold uppercase tracking-wide select-none">SIGN UP</a>
-    </div>
-  </nav>
-
-  <!-- Hero Slider -->
-  <section class="relative bg-gradient-to-r from-purple-900 via-black to-purple-900">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div class="grid grid-cols-1 md:grid-cols-2 items-center">
-        <div>
-          <h1 class="text-white text-4xl md:text-5xl font-bold leading-tight mb-3" style="font-family: 'Poppins', sans-serif;">
-            Boost Your Deposit, get daily rewards!
-          </h1>
-          <p class="text-white font-semibold text-lg mb-6">Click T&C for details</p>
-          <button class="btn-primary px-8 py-3 rounded-full text-xl font-semibold uppercase tracking-wider hover:shadow-lg active:scale-95 select-none">
-            Play Now!
-          </button>
-          <div class="flex space-x-6 mt-6">
-            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/79a1619b-6b1e-48bd-9cca-f405b090d2f7.png" alt="Colorful candy themed slot game logo with candies and text Sugar Rush 1000" class="rounded-md shadow-lg" />
-            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b6dcbc1f-e6c5-4c87-b090-3009b12e90a1.png" alt="Candy and sweets confetti style slot game logo with text Sweet Bonanza 1000" class="rounded-md shadow-lg" />
-          </div>
-        </div>
-        <div class="relative flex justify-center md:justify-end mt-8 md:mt-0">
-          <img 
-            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/24e28e99-c765-4d37-bc92-149de2814a40.png" 
-            alt="Smiling young woman wearing a black and white casino-themed bowtie and gloves outfit holding a smartphone, studio style" 
-            class="rounded-xl shadow-2xl max-w-full max-h-[560px]"
-            onerror="this.style.display='none'"
-          />
-          <div class="absolute top-6 right-0 bg-gradient-to-l from-yellow-400 to-yellow-600 px-6 py-8 rounded-l-lg text-right shadow-lg max-w-[280px]">
-            <p class="text-black font-bold uppercase text-xs tracking-wide mb-1">BACK BY POPULAR DEMAND!</p>
-            <h2 class="text-4xl font-extrabold text-purple-900 leading-none">30%<br />DEPOSIT<br />REWARD<br />EVERYDAY!</h2>
-            <div class="mt-3 flex justify-end space-x-2">
-              <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/818ffbd7-46ef-4372-b349-35cdccedddcd.png" alt="Golden Empire slot game logo with king and crown in yellow and gold colors" class="rounded" />
-              <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1c4b464b-2973-4876-891f-55429d9a1730.png" alt="Super Ace slot game logo with red & gold crown icon" class="rounded" />
-              <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/79ca3f71-4b5f-4586-bf74-b06a62c9afab.png" alt="Super Speed Baccarat Live logo with red and white text and scorecards" class="rounded" />
-            </div>
-          </div>
-        </div>
+    <form class="login-box" autocomplete="off" onsubmit="event.preventDefault(); alert('Logged in! (Demo)');">
+      <div class="mb-4">
+        <input type="text" name="email" placeholder="Email or phone number" class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500" required />
       </div>
-    </div>
-  </section>
-
-  <!-- Favorites Grid -->
-  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-    <h2 class="text-white text-3xl font-bold mb-1 italic">Our Favorites!</h2>
-    <p class="text-gray-400 mb-6">Top-rated games handpicked just for you</p>
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
-      <div class="game-card rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-purple-900 via-purple-800 to-purple-700 cursor-pointer" tabindex="0" role="button" aria-label="Play Starburst slot game">
-        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fec9c1e3-8c70-4ee8-9c8e-e38e2083fc3c.png" alt="Starburst slot game promotional image with cheerful woman and colorful gems" class="w-full h-40 object-cover" />
-        <div class="p-2 font-semibold text-center text-purple-200">Starburst</div>
+      <div class="mb-4">
+        <input type="password" name="password" placeholder="Password" class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500" required />
       </div>
-      <div class="game-card rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-yellow-700 via-yellow-600 to-yellow-500 cursor-pointer" tabindex="0" role="button" aria-label="Play Gates of Olympus slot game">
-        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7d37cf53-5022-4a90-8416-1019925ef6a5.png" alt="Gates of Olympus slot game bright golden fantasy Zeus themed promotional" class="w-full h-40 object-cover" />
-        <div class="p-2 font-semibold text-center text-yellow-900">Gates of Olympus</div>
+      <button type="submit" class="login-btn mb-3">Log In</button>
+      <div class="text-center mb-2">
+        <a href="#" class="forgot-link">Forgotten password?</a>
       </div>
-      <div class="game-card rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-red-700 via-red-600 to-red-500 cursor-pointer" tabindex="0" role="button" aria-label="Play Wealth Inn slot game">
-        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/51b412d6-53ea-49ce-a01d-ea4401482df6.png" alt="Wealth Inn slot game fiery red and gold dragon emperor theme" class="w-full h-40 object-cover" />
-        <div class="p-2 font-semibold text-center text-red-900">Wealth Inn</div>
+      <hr class="my-4" />
+      <div class="text-center">
+        <button type="button" class="bg-green-500 text-white font-bold rounded px-4 py-2 hover:bg-green-600">Create New Account</button>
       </div>
-      <div class="game-card rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-green-700 via-green-600 to-green-500 cursor-pointer" tabindex="0" role="button" aria-label="Play Lucky Penny slot game">
-        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/996774ac-41af-4fe1-847d-996f85593760.png" alt="Lucky Penny slot game with cheerful leprechaun and gold coins" class="w-full h-40 object-cover" />
-        <div class="p-2 font-semibold text-center text-green-900">Lucky Penny</div>
-      </div>
-      <div class="game-card rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-yellow-600 via-yellow-400 to-yellow-300 cursor-pointer" tabindex="0" role="button" aria-label="Play Mahjong Wins slot game">
-        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/06408fe1-6979-4afa-a985-128a67d9c8e4.png" alt="Mahjong Wins slot game with fiery mahjong tiles and glowing gold scrolls" class="w-full h-40 object-cover" />
-        <div class="p-2 font-semibold text-center text-yellow-800">Mahjong Wins</div>
-      </div>
-      <div class="game-card rounded-lg overflow-hidden shadow-lg bg-gradient-to-br from-blue-500 via-cyan-400 to-blue-300 cursor-pointer" tabindex="0" role="button" aria-label="Play Sugar Bang Bang slot game">
-        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9171513b-6dc4-40e3-b112-e4ac35766dc9.png" alt="Sugar Bang Bang slot candy themed colorful candy bear with text 3000x" class="w-full h-40 object-cover" />
-        <div class="p-2 font-semibold text-center text-blue-900">Sugar Bang Bang</div>
-      </div>
-    </div>
-    <div class="text-right mt-6">
-      <a href="#" class="text-purple-600 font-bold hover:text-purple-400 hover:underline uppercase tracking-wide select-none">See All &rarr;</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-black border-t border-purple-900 py-6 text-center text-gray-500">
-    <p>© 2024 DNSM Casino. All rights reserved.</p>
-    <p class="mt-2">
-      <a href="#" class="footer-link mx-2">Terms & Conditions</a> | 
-      <a href="#" class="footer-link mx-2">Privacy Policy</a> | 
-      <a href="#" class="footer-link mx-2">Responsible Gaming</a>
-    </p>
-  </footer>
+    </form>
+  </div>
 </body>
 </html>
